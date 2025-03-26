@@ -1,0 +1,23 @@
+{%extends 'tests.html'%}
+
+{%block tabs%} spams {% endblock %}
+
+{% block saturs %}
+
+<form method="post" action="veidot_spamu">
+    <label class="form label"> vārds </label>
+    <input type="text" placeholder="vārds" name="vārds">
+    <label class="form label"> vecumas </label>
+    <input type="number" name="vecumas">
+    <label class="form label"> dzimums </label>
+    <input type="radio" name="dzimums" value="v">
+    <label for="v"> vīrirtis </label>
+    <input type="radio" name="dzimums" value="s">
+    <label for="s"> sieviete </label>
+    <input type="submit" value="izveidot spamu!">
+
+</form>
+
+
+
+{% endblock %}

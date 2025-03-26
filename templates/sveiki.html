@@ -1,0 +1,13 @@
+{% extends 'tests.html'%}
+
+{% block tabs%} Sveiki {% endblock%}
+
+{% block saturs %}
+
+    {% for viens in name %}
+
+        <h1>Sveiki, {{viens}} {{last}}!</h1>
+
+    {% endfor %}
+
+{% endblock%}
