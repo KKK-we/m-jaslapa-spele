@@ -30,7 +30,7 @@ def uztaisit_vienu_spamu(vards, vecums, dz):
     with open(f"spams/{vards}.txt", "w", encoding= "utf-8") as f:
         f.write(teksts)
 
-uztaisit_vienu_spamu("laima", 23, "s")    
+#uztaisit_vienu_spamu("laima", 23, "s")    
 
 def viss_spams():
     with open ("vardi.txt", "r", encoding="utf-8") as f :
@@ -39,4 +39,13 @@ def viss_spams():
             info = viens.split()
             print (info)
             uztaisit_vienu_spamu(info[0], info[1], info[2])
-viss_spams()
+#viss_spams()
+
+def iegut_datus():
+    with open("vardi.txt","r", encoding="utf-8") as f :
+        rindinas = f.readlines()
+        visi_dati = []
+        for rinda in rindinas:
+            rindas_dati = rinda.split()
+            visi_dati.append(rindas_dati)
+    return visi_dati
