@@ -1,5 +1,5 @@
 from flask import Flask, redirect, render_template, request
-from data import iegut_datus, uztaisit_vienu_spamu
+from data import iegut_datus, iegut_vardu, uztaisit_vienu_spamu, pievienot_datus
 
 app = Flask (__name__)
 
@@ -33,9 +33,12 @@ def veidot():
     uztaisit_vienu_spamu(name, age, sex)
     return redirect("/spams")
 
+@app.route("/karatavas")
+def karatavas():
+    vards = iegut_vardu()
+    return render_template("karatavas.html", vards=vards)
+
+
 if __name__ =='__main__':
     app.run(port=5000)
 
-@app.route("karatavas")
-def index():
-    return render_template("karatavas.html")

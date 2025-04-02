@@ -1,0 +1,44 @@
+{% extends "test.html" %}
+
+{%block tabs%}Karātavas{%endblock%}
+
+{%block saturs%}
+<h1>Sveiki! Uzspēlēsim?</h1>
+<div id="vards" style="display: none;">{{vards}}</div>
+
+<hr>
+<div id="vardaVieta"></div>
+<hr>
+<button id="a" onclick="minetBurtu('a')">A</button>
+<button id="ā" onclick="minetBurtu('ā')">Ā</button>
+<button id="b" onclick="minetBurtu('b')">B</button>
+<button id="c" onclick="minetBurtu('c')">C</button>
+<button id="č" onclick="minetBurtu('č')">Č</button>
+<button id="d" onclick="minetBurtu('d')">D</button>
+<button id="e" onclick="minetBurtu('e')">E</button>
+<button id="f" onclick="minetBurtu('f')">F</button>
+<button id="g" onclick="minetBurtu('g')">G</button>
+<button id="ģ" onclick="minetBurtu('ģ')">Ģ</button>
+<button id="h" onclick="minetBurtu('h')">H</button>
+<button id="i" onclick="minetBurtu('i')">I</button>
+<button id="j" onclick="minetBurtu('j')">J</button>
+<button id="k" onclick="minetBurtu('k')">K</button>
+<button id="ķ" onclick="minetBurtu('ķ')">Ķ</button>
+<button id="l" onclick="minetBurtu('l')">L</button>
+<button id="ļ" onclick="minetBurtu('ļ')">Ļ</button>
+<button id="m" onclick="minetBurtu('m')">M</button>
+<button id="n" onclick="minetBurtu('n')">N</button>
+<button id="ņ" onclick="minetBurtu('ņ')">Ņ</button>
+<button id="o" onclick="minetBurtu('o')">O</button>
+<button id="p" onclick="minetBurtu('p')">P</button>
+<button id="r" onclick="minetBurtu('r')">R</button>
+<button id="s" onclick="minetBurtu('s')">S</button>
+<button id="š" onclick="minetBurtu('š')">Š</button>
+<button id="t" onclick="minetBurtu('t')">T</button>
+<button id="u" onclick="minetBurtu('u')">U</button>
+<button id="ū" onclick="minetBurtu('ū')">Ū</button>
+<button id="v" onclick="minetBurtu('v')">V</button>
+<button id="z" onclick="minetBurtu('z')">Z</button>
+<button id="ž" onclick="minetBurtu('ž')">Ž</button>
+
+{% endblock %}
